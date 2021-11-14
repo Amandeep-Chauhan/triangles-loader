@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loader-wrapper {
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.loader {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.loader1 {
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid transparent;
+  border-right: 60px solid #90e0ef;
+
+  animation: loaderAnimate 8s linear infinite;
+}
+.loader2 {
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-left: 60px solid #90e0ef;
+  animation: loaderAnimate 8s infinite linear 1s;
+}
+@keyframes loaderAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  12.5% {
+    transform: rotate(90deg);
+  }
+  24.5% {
+    transform: rotate(90deg);
+  }
+  36.5% {
+    transform: rotate(180deg);
+  }
+  48.5% {
+    transform: rotate(180deg);
+  }
+  60.5% {
+    transform: rotate(270deg);
+  }
+  72.5% {
+    transform: rotate(270deg);
+  }
+  84.5% {
+    transform: rotate(360deg);
+  }
+  96.5% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
